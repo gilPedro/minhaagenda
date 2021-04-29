@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button routerLink="/tarefa">
+     
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+
+    </ion-button>   
+  </ion-buttons>
+
+  <ion-buttons slot="end">
+    <ion-button routerLink="/edita-tarefa">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+    <ion-title>edita-tarefa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="container">
+    <strong>
+      <ion-input type="text" placeholder="Nome" [(ngModel)]="nome"></ion-input>
+
+      <ion-input type="text" placeholder="Descrição" [(ngModel)]="descricao"></ion-input>
+
+      <p><ion-button routerLink= "/tarefa">Ok</ion-button></p>
+
+    </strong>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div id="container b">
+    <strong>
+      No controle 
+      <ion-icon name="logo-tux"></ion-icon>
+  </strong>
+  </div>
+</ion-footer>

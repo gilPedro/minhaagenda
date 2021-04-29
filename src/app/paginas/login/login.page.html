@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      ..::Boas Vindas::..
-    </ion-title>
+    <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,17 +12,13 @@
   </ion-header>
 
   <div id="container">
+    <strong>
+      <ion-input type="text" placeholder="E-mail" [(ngModel)]="email"></ion-input>
 
-    <strong> Seja bem vindo!</strong>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>  
-    <p>
-    <ion-button routerLink= "/login">Logar</ion-button>
-    <ion-button routerLink= "/registro">Registrar</ion-button>
-  </p>
+      <ion-input type="text" placeholder="senha" [(ngModel)]="senha"></ion-input>
+    </strong>
+  <p><ion-button routerLink= "/inicio">Logar</ion-button></p>
 
   </div>
+
 </ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button routerLink="/contato">
+     
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+
+    </ion-button>   
+  </ion-buttons>
+
+  <ion-buttons slot="end">
+    <ion-button routerLink="/edita-contato">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+    <ion-title>edita-contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <div id="container">
+    <strong>
+      <ion-input type="text" placeholder="Nome" [(ngModel)]="nome"></ion-input>
+
+      <ion-input type="text" placeholder="E-mail" [(ngModel)]="email"></ion-input>
+
+      <ion-input type="text" placeholder="Telefone" [(ngModel)]="telefone"></ion-input>
+
+      <p><ion-button routerLink= "/contato">Ok</ion-button></p>
+
+    </strong>
+  </div>
+</ion-content>
+
+
+
+<ion-footer>
+  <div id="container">
+    <strong>
+      No controle 
+      <ion-icon name="logo-tux"></ion-icon>
+  </strong>
+  </div>
+</ion-footer>

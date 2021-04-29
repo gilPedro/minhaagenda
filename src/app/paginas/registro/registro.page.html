@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>
+      <ion-input type="text" placeholder="E-mail" [(ngModel)]="email"></ion-input>
+
+      <ion-input type="text" placeholder="senha" [(ngModel)]="senha"></ion-input>
+    </strong>
+  <p><ion-button routerLink= "/inicio">Cadastrar</ion-button></p>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <div id="container">
+    <strong>
+      No controle 
+      <ion-icon name="logo-tux"></ion-icon>
+  </strong>
+  </div>
+</ion-footer>
